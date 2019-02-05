@@ -84,17 +84,26 @@ html {
 
 .section {
     padding: 0;
-    margin: 0;   
+    margin: 0;
+    position: relative; 
 }
 
 .banner {
-    height: 600px;
-    width: 1170px;
-    object-fit: cover;
+    min-height: 600px;
+    background-image: 
+    linear-gradient(to left, rgba(0,0,0,.55), rgba(0,0,0,.55)), url("../image/slider.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-  
-.slider {
-    position: relative;
+
+.slider-container {
+    position: absolute;
+    width: 600px;
+    width: 1110px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .slider-title {
