@@ -33,7 +33,7 @@ html {
 
 .container {
     background-color: #e9f0fd;
-    width: 1170px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -108,10 +108,11 @@ html {
 
 .slider-title {
     position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 40%;
-    left:25%;
+    width: 1200px;
+    height: 136px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
     color: #ffffff;
     text-transform: uppercase;
     font-family: 'Roboto', 'Montserrat', sans-serif;
@@ -137,32 +138,23 @@ html {
     height: 102px;
     padding: 15px;
     margin: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     background: #1abc9c;
     cursor: pointer;
-}
-  
-.button svg {
-    fill: #fff;
-}
-  
-.button:hover svg {
-    fill: #ccc;
+    border-width: 0;  
+    background-repeat: no-repeat; 
+    background-position: center;
 }
   
 .btn-left {
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    background-image: url(../image/left.png);
 }
   
 .btn-right {
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-  
-.btn-left svg {
-    transform: rotate(180deg);
+    background-image: url(../image/right.png);
 }
 
 .new-collection {
@@ -201,6 +193,7 @@ html {
 }
 
 .new-collection-list-item {
+    position: relative; 
     font-size: 0;
     padding: 0;
     width:255px;
@@ -256,6 +249,146 @@ html {
     color:#ffffff;
     background-color:#7fd9c7;
 }
+
+.overlay {
+    position: absolute;
+    width: 235px;
+    height: 262px;
+    border: 10px solid rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+  
+.overlay-icons-block {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 166px;
+    height: 107px; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    opacity: 0;
+    z-index: 9;
+}
+  
+.icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.icons li:last-child {
+    background-color: #323232;
+}
+  
+.icons a {
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+  
+.icons .icon-cart {  
+    width: 166px; 
+}
+  
+.icons .icon-cart span {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%); 
+    display: inline-block;
+    box-sizing: border-box;
+    color: #fff; 
+    text-transform: uppercase;
+    font-size: 14px; 
+    line-height: 50px;
+    height: 50px;
+}
+  
+.icons .icon-cart::before {
+    display: inline-block;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    content: "";
+    width: 48px;
+    height: 48px; 
+    background-image: url(../image/icon-cart.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+  
+.icon-like {
+    background-image: url(../image/icon-like.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.icon-compare {
+    background-image: url(../image/icon-compare.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.icon-hold {
+    background-image: url(../image/icon-hold.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.overlay-icons-block li {
+    position: absolute;
+    margin: 0;
+    padding: 0;  
+}
+   
+.overlay-icons-block li:nth-child(1) {
+    left: 0;
+    top: 0;  
+    z-index: 4;
+} 
+  
+.overlay-icons-block li:nth-child(2) { 
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%); 
+} 
+  
+.overlay-icons-block li:nth-child(3) { 
+    right: 0;
+    top: 0;  
+}  
+  
+.overlay-icons-block li:last-child { 
+    left: 0;
+    bottom: 0;
+}  
+  
+.product-list li:hover .overlay {
+    opacity: .55;
+} 
+  
+.product-list li:hover .overlay-icons-block {
+    opacity: 1;
+} 
+  
+.overlay-icons-block li:hover {
+    background: #1abc9c;
+    border: none; 
+}  
+  
+.overlay-icons-block li:hover a {  
+    border: none; 
+}  
 
 .page-footer {
     margin: 0;
