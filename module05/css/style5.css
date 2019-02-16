@@ -1,18 +1,18 @@
 
-*/
+*,
 *::before,
 *::after {
     box-sizing: inherit;
 }
 
-.body {
+body {
     background-color: #e9f0fd;
     background-size: cover;
     margin: 0;
     padding: 0;
 }
 
-.img {
+img {
     display: block;
     max-width: 100%; ;
     height: auto;
@@ -34,6 +34,7 @@
 
 .container {
     background-color: #e9f0fd;
+    width: 1140px;
     margin: 0 auto;
     padding: 0;
     text-align: center;
@@ -42,16 +43,24 @@
 .page-nav {
     padding: 0px;
     margin: 0;
-    background-color: #ffffff;
     height: 92px;
     line-height: 92px;
 }
 
-.site-logo {
+.container .site-logo {
     display: inline-block;
-    margin-top: 14px;
+    text-transform: uppercase;   
+    text-decoration: none;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-size: 30px;
+    color: #555252;
+    margin: 0;
     padding: 0;
-    text-align: left;
+}
+  
+  .container .site-logo::first-letter{
+    color: #1abc9c;
+    font-weight: 900;
 }
 
 .site-navigation {
