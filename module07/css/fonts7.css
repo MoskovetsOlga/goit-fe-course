@@ -1,0 +1,37 @@
+@font-face {
+font-family: 'Montserrat Bold';
+src: url('Montserrat-ExtraBold.eot');
+src: url('Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+url('Montserrat-ExtraBold.woff') format('woff'),
+url('Montserrat-ExtraBold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+
+@font-face {
+font-family: 'Montserrat Regular';
+src: url('Montserrat-Regular.eot');
+src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+url('Montserrat-Regular.woff') format('woff'),
+url('Montserrat-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Droid Serif Italic';
+src: url('DroidSerif-Italic.eot');
+src: url('DroidSerif-Italic.eot?#iefix') format('embedded-opentype'),
+url('DroidSerif-Italic.woff') format('woff'),
+url('DroidSerif-Italic.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {font-family: "Wisdom Script AI";
+src: url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.eot");
+src: url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.eot?#iefix") format("embedded-opentype"),
+url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.woff2") format("woff2"),
+url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.woff") format("woff"),
+url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.ttf") format("truetype"),
+url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.svg#Wisdom Script AI") format("svg");
+}
