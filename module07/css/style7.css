@@ -168,7 +168,7 @@ img {
     background-image: url(../image/security-icon.png);
 }
 
-.team-container {
+.form-container {
     padding: 0;
     margin: 0;
     font-family:'Montserrat','Roboto', sans-serif;
@@ -177,7 +177,7 @@ img {
     text-align: center;
 }
 
-.team-subtittle {
+.form-subtittle {
     margin: 0;
     padding: 0;
     font-family:'Kaushan Script', cursive;
@@ -185,11 +185,58 @@ img {
     font-size: 30px;
 }
 
-.team-tittle {
+.form-tittle {
     margin: 0;
     padding: 0;
     margin-top: 15px;
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
+}
+
+.form, input {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.input {
+    display: inline-block;
+    float: left;
+    width: 455px;
+    height: 50px;
+    margin: 15px auto;
+    line-height: 50px;
+    padding:0;
+    border-radius: 4px;
+    text-indent: 6px;
+}
+
+.input [type="submit"] {
+    display: block;
+    height: 64px;
+    width: 240px;
+    margin: 30px auto;
+    background-color: #fed136;
+    color: #ffffff;
+    float: center;
+}
+
+.input [type="submit"]:hover {
+    cursor: pointer;
+}
+
+.form-container {
+    display:flex;
+    justify-content: center;
+}
+
+.textarea {
+    float:right;
+}
+
+.wrapper {
+    margin:10px;
+    width:940px;
+    font-family:'Montserrat','Roboto', sans-serif;
+    padding: 20px;
 }
