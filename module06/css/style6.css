@@ -69,13 +69,18 @@ img {
     display: block;
     margin-top: ;
     margin: auto;
-    width: 50px;
+    width: calc (100%-50px);
     padding-bottom: 10px;
+    opacity: 0;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
     color:#f38181;
+}
+
+.site-navigation a:hover::after {
+    opacity: 1;
 }
 
 .services-container {
@@ -397,6 +402,7 @@ img {
     padding: 0;
     padding-left: 22px;
     font-size: 16px;
+    font-family:'Montserrat','Roboto', sans-serif;
 }
   
 .footer-tittle a { 
@@ -419,6 +425,7 @@ img {
   
 .button {
     border: none;
+    box-sizing: border-box;
     text-transform: uppercase;
     width: 140px;
     height: 40px;
