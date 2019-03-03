@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index7</title>
-    <link rel="stylesheets" href="css/fonts7.css">
-    <link rel="stylesheet" href="css/style7.css">
+    <link rel="stylesheet" href="./css/fonts7.css">
+    <link rel="stylesheet" href="./css/style7.css">
     
 </head>
 
 <body>
-    <header class="page-header container">
+    <header class="page-header-container">
         <nav class="page-nav">
             <a href="" class="site-logo">Golden</a>
 
@@ -33,29 +33,28 @@
         <article class="services">
             <ul class="services-list">
                 <li class="services-list-item">
-                        <p class="services-main">E-Commerce</p>
-                        <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="image"><img class="icon" src="image/bag-icon.png"></div>
+                    <p class="services-main">E-Commerce</p>
+                    <p class="services-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates eius magni quae iusto quibusdam nihil dolorem hic</p>
                 </li>
 
                 <li class="services-list-item">
-                    <div class="services-list-item-content">
-                        <p class="services-main">Responsive Web</p>
-                        <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                    <div class="image"><img class="icon" src="image/computer-icon.png"></div>
+                    <p class="services-main">Responsive Web</p>
+                    <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure quas numquam fuga eos debitis labore molestiae sequi</p>
                 </li>
             
                 <li class="services-list-item">
-                    <div class="services-list-item-content">
-                        <p class="services-main">Wed Security</p>
-                        <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                    <div class="image"><img class="icon" src="image/security-icon.png"></div>
+                    <p class="services-main">Wed Security</p>
+                    <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nisi sunt deserunt et! Ut quia impedit itaque distinctio</p>
                 </li>
             </ul>                     
         </article>
     </section>
 
 
-    <section class="form">
+    <section class="form-section">
         <h2 class="form-tittle">contact us</h2>
         <p class="form-subtittle">Lorem ipsum dolor sit amet consectetur.</p>
                 <form class="form-container" action="#" class="form" method="get">
@@ -65,10 +64,10 @@
                        <input type="mail" class="personals-block-required" name="email" placeholder="your e-mail*">
                        <input type="text" class="personals-block" name="subject" placeholder="subject">
                     </div>
-                    <textarea class="textarea-block-required" name="message" rows="5" cols="45" placeholder="your message*"></textarea>
+                    <textarea class="textarea-block-required" required name="comment" placeholder="your Message*"></textarea>
                     </div>
-                    <input type="submit" value="send message" id="send message">
                 </form>
+         <input class="buttom" type="submit" value="send message" id="send message">
     </section>
 
 </body>
