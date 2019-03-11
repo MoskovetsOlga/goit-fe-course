@@ -1,0 +1,19 @@
+@font-face {
+font-family: 'Montserrat Bold';
+src: url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Montserrat Regular';
+src: url('../fonts/Montserrat-Regular.woff') format('woff'); 
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoLight/RobotoLight.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;

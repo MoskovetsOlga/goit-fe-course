@@ -1,0 +1,151 @@
+@media (min-width: 768px) {
+
+  .container {
+    width: 768px;
+  }
+
+  .header, .banner {
+    min-height: 700px;
+  }
+
+  .banner {
+    background-image: 
+    linear-gradient(to left
+    , rgba(26, 25, 21, .2) 
+    , rgba(26, 25, 21, .2))
+    , url("../image/Bunner-tablet.jpg");
+  }
+
+  .menu-container {
+    justify-content: space-between;
+  }
+  
+  .menu {
+    flex-direction: row;
+    height: inherit;
+    margin-bottom: 140px;
+    width: 670px;
+    height: 100px;
+  }
+  
+  .wrapper {
+    float: right;
+  }
+  .name, .log-sign {
+    margin-top: 38px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .name {
+    line-height: 36px;
+    float: left;
+    height: 15px;
+  }
+
+  .title-wrapper {
+    max-width: 600px;
+    margin-top: 110px;
+  }
+
+  .title {
+    font-size: 52px; 
+    line-height: 62px;
+    margin-bottom: 30px;
+  }
+
+  .title-add {
+    font-size: 24px;
+    display: inline;
+    width: inherit;
+    margin-bottom: 30px;
+  }
+
+  .title-link {
+    width: 226px;
+    margin: 0 auto;  
+  }
+
+  .main-title {
+    width: inherit;
+    margin-bottom: 30px;
+  }
+
+  .container-team {
+    width: 492px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    margin-bottom: 36px;
+  }
+
+  .article-team {
+    width: 236px; 
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 52px; 
+  }
+
+  .article1, .article3 {
+    order: 1;
+  }
+  .article2, .article4 {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .buttom-loader {
+    margin-bottom: 40px;
+    width: 193px;
+  }
+
+}
+
+
+@media (min-width: 940px) {
+  .container, main {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .menu-container {
+    justify-content: space-between;
+  }
+  
+  .name {
+    width: 100px ;
+  }
+
+  .banner {
+    background-image: 
+    linear-gradient(to left
+    , rgba(26, 25, 21, .2) 
+    , rgba(26, 25, 21, .2))
+    , url("../image/banner-desktop.jpg");
+  }
+ 
+  .main-title {
+    margin-top: 68px;
+  }
+
+  .container-team {
+    width: 940px;
+    margin-bottom: 35px;
+  }
+
+  .article-team {
+    width: 220px;
+  }
+
+  .article1, .article3,
+  .article2, .article4 { 
+    margin-bottom: 0;
+  }
+
+  .buttom-loader {
+    margin-bottom: 74px;
+  }
+
+}
