@@ -1,8 +1,71 @@
 "use strict";
-// За основу возьми домашнее задание из модуля №4, но теперь необходимо написать функцию-конструктор Notepad для создания объекта управляющего коллекцией заметок.
+// За основу возьми домашнее задание из модуля №4, но теперь необходимо написать функцию-конструктор Notepad 
+// для создания объекта управляющего коллекцией заметок.
 
 // Конструктор Notepad при инициализации принимает массив заметок
 const Notepad = function Notepad(notes = []) {
+  this.notes = notes;
+  this.getNotes = function () {
+    return this.notes;
+  };
+
+  this.findNoteById = function(id) {
+    for (let note of this.notes) {
+      if (note.id === id) return note;
+    }
+    return;
+  };
+
+  this.saveNote = function(note) {
+    this.notes.push(note);
+    return note;
+  };
+
+  this.deleteNote = function(id) {
+    this.notes.splice(this.notes.indexOf(this.findNoteById(id)), 1);
+    return this.notes;
+  };
+
+  this.updateNoteContent = function(id, updatedContent) {
+    if (this.findNoteById(id)){
+      return this.notes[this.notes.indexOf(this.findNoteById(id))] = {...this.findNoteById(id), ...updatedContent}
+    }
+  };
+
+  this.updateNotePriority = function(id, priority) {
+    for (let note of this.notes) {
+      if (note.id === id) {
+        note.priority = priority;
+        return note;
+      }
+    }
+  };
+
+  this.filterNotesByQuery = function(query) {
+    const res = [];
+
+    for (let note of this.notes) {
+      if (
+        note.title.toLowerCase().includes(query.toLowerCase())||
+        note.body.toLowerCase().includes(query.toLowerCase())
+      ) {
+        res.push(note);
+        return res;
+      }
+    }
+  }
+
+  this.filterNotesByPriority = function(priority) {
+    const res = [];
+
+    for (let note of this.notes) {
+      if(note.priority === priority) {
+        res.push(note);
+      }
+    }
+    return res;
+  }
+
   // Перенеси свойства и методы объекта notepad в конструктор
 };
 
@@ -12,7 +75,8 @@ Notepad.Priority = {
   NORMAL: 1,
   HIGH: 2,
 };
-// Далее идет код для проверки работоспособности конструктора и созданного экземпляра, вставь его в конец скрипта. Твоя реализация конструктора Notepad должна проходить этот тест.
+// Далее идет код для проверки работоспособности конструктора и созданного экземпляра, 
+// вставь его в конец скрипта. Твоя реализация конструктора Notepad должна проходить этот тест.
 
 const initialNotes = [
   {
