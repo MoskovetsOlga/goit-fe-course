@@ -15,7 +15,6 @@ const Notepad = function Notepad(notes = []) {
     }
     return;
 
-    
   };
 
   this.saveNote = function(note) {
