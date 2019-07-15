@@ -12,6 +12,7 @@ const Notepad = function Notepad(notes = []) {
   this.findNoteById = function(id) {
     for (let note of this.notes) {
       if (note.id === id) return note;
+
     }
     return;
 
@@ -185,3 +186,5 @@ console.log(
  */
 notepad.deleteNote('id-2');
 console.log('Заметки после удаления с id -2: ', notepad.getNotes());
+
+//commit
