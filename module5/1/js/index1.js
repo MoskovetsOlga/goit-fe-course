@@ -14,6 +14,8 @@ const Notepad = function Notepad(notes = []) {
       if (note.id === id) return note;
     }
     return;
+
+    
   };
 
   this.saveNote = function(note) {
