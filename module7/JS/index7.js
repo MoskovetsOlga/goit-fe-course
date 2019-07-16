@@ -143,8 +143,8 @@ console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, об
 console.log(getUsersWithAge(users, 30, 40));
 // [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
 
-1.7. Задание 7
-Получить общую сумму баланса (поле balance) всех пользователей.
+// 1.7. Задание 7
+// Получить общую сумму баланса (поле balance) всех пользователей.
 
 const getTotalBalance = users => {
 users.reduce((totalBalance, user) => {
