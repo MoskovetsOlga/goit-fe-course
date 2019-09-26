@@ -11,12 +11,9 @@ class Notepad {
   get notes() {
     return this._notes;
   }
-
+  
   findNoteById(id) {
-    for (let note of this._notes) {
-      if (note.id === id) return note;
-    }
-    return;
+    return this._notes.find(note => note.id === id);
   }
 
   saveNote(note) {
@@ -31,48 +28,23 @@ class Notepad {
   updateNoteContent(id, updatedContent) { 
     if (this.findNoteById(id)){  
     return  this._notes[this._notes.indexOf(this.findNoteById(id))] = {...this.findNoteById(id), ...updatedContent}
-          }     
+    }     
   }
 
   updateNotePriority(id, priority) {
-    for (let note of this._notes) {
-      if (note.id === id) {
-        note.priority = priority;
-        return note;
-      }
-    }
+   return this._notes.find(note => note.id === id).priority = priority;
+
   }
 
   filterNotesByQuery(query) {
-    const res = [];
-
-    for (let note of this._notes) {
-      if (
-        note.title.toLowerCase().includes(query.toLowerCase()) ||
-        note.body.toLowerCase().includes(query.toLowerCase())
-      ) {
-        res.push(note);
-        return res;
-      }
-    }
+    return this._notes.filter(note =>  note.title.toLowerCase().includes(query.toLowerCase()) ||
+        note.body.toLowerCase().includes(query.toLowerCase()));
   }
 
   filterNotesByPriority(priority) {
-    const res = [];
-
-    for (let note of this._notes) {
-      if (note.priority === priority) {
-        res.push(note);
-      }
-    }
-    return res;
+    return this._notes.filter(note => note.priority === priority);
   }
-
-
 };
-
-
-
 
 const PRIORITY_TYPES = {
   LOW: 0,
