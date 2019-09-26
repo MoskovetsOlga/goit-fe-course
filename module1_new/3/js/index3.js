@@ -14,6 +14,7 @@
 // ямайка - 120 кредитов
 // PS: используй switch
 
+
 const priceForChina = 100;
 const priceForSouthAmerica = 250;
 const priceForAustralia = 170;
