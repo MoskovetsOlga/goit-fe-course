@@ -4,6 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const WebpackBar = require('webpackbar');
 
+
 const modeConfig = env => require(`./build-utils/webpack.${env}`)(env);
 
 module.exports = ({ mode = 'production' }) =>
