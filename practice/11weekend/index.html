@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Разметка элемента списка
+
+<li class="item">
+  <p class="name"><strong>Name:</strong> </p>
+  <p class="quantity"><strong>Quantity:</strong> </p>
+</li>
+ -->
+
+  <!-- <template id="productsTemplate">
+    {{#each this}}
+    <li class="item">
+      <p class="name"><strong>Name: {{this.name}}</strong> </p>
+      <p class="quantity"><strong>Quantity: {{this.quantity}}</strong> </p>
+    </li>
+    {{/each}}
+  </template> -->
+
+  <!-- <template id="productsTemplate">
+    <li class="item">
+      <p class="name"><strong>Name: {{name}} </strong> </p>
+      <p class="quantity"><strong>Quantity: {{quantity}} </strong> </p>
+    </li>
+  </template> -->
+
+  <!-- <template id="postTemplate">
+    {{#each this}}
+    <article class="post">
+      <h2 class="title">{{this.title}}</h2>
+      <p class="text">{{this.text}}</p>
+      {{#if this.favourite}}
+      <span class="fav-icon"></span>
+      {{/if}}
+    </article>
+    {{/each}}
+  </template> -->
+
+  <template id="postTemplate">
+    <article class="post">
+      <h2 class="title">{{title}}</h2>
+      <p class="text">{{text}}</p>
+      {{#if favourite}}
+      <span class="fav-icon"></span>
+      {{/if}}
+    </article>
+  </template>
+
+  <!-- Контейнер в который рендерить -->
+  <!-- <ul class="products"></ul> -->
+  <section class="posts"></section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

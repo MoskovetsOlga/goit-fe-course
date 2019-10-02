@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Разметка поста -->
+
+  <template id="postTemplate">
+    {{#each this}}
+    <article class="post">
+      <h2 class="title">{{this.title}}</h2>
+      <p class="text">{{this.text}}</p>
+      {{#if this.favourite}}
+      <span class="fav-icon"></span>
+      {{/if}}
+    </article>
+    {{/each}}
+  </template>
+
+
+  <!-- Контейнер в который рендерить -->
+  <section class="posts"></section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
